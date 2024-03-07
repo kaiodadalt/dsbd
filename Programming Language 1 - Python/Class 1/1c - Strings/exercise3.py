@@ -1,7 +1,7 @@
 """
     *** EXERCISE 3 ***
 
-    Imprima a mensagem "O resultado da fórmula de Bhaskara é:" e o resultado
+    Imprima a mensagem "O resultado da fórmula de Bhaskara é" e o resultado
 
     a. Em seguida da mensagem
     b. Abaixo da mensagem

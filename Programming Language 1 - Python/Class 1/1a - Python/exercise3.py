@@ -21,10 +21,10 @@ import math
 
 def calcular_raizes(a, b, c):
     """
-    Calcula as raízes de uma equação do segundo grau usando a fórmula de Bhaskara.
+        Calcula as raízes de uma equação do segundo grau usando a fórmula de Bhaskara.
 
-    Retorna:
-    tuple: as duas raízes da equação.
+        Retorna:
+        tuple: as duas raízes da equação.
     """
     # Calcula o discriminante
     discriminante = b ** 2 - 4 * a * c

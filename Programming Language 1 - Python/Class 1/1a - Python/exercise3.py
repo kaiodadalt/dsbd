@@ -1,4 +1,4 @@
-'''
+"""
     *** EXERCISE 3 ***
     
     Faça um programa que leia os coeficientes a, b e c de uma equação de segundo grau. 
@@ -14,4 +14,4 @@
     Digite c: 0
     Raiz 1: 0
     Raiz 2: 0
-'''
+"""

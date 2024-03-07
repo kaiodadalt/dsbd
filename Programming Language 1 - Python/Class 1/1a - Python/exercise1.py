@@ -10,3 +10,27 @@
     Isso pode ser diferente em alguns sistemas. Por exemplo, alguns terminais de 
     sistema Mac utilizam vírgula para separar as casas decimais.
 """
+
+
+def calcular_imc(peso, altura):
+    return peso / (altura ** 2)
+
+
+def main():
+    try:
+        # Solicita ao usuário seu peso e altura, utilizando ponto para casas decimais
+        peso = float(input("Digite seu peso em kg (exemplo: 70.5): "))
+        altura = float(input("Digite sua altura em metros (exemplo: 1.75): "))
+
+        # Calcula o IMC
+        imc = calcular_imc(peso, altura)
+
+        # Exibe o resultado
+        print(f"Seu Índice de Massa Corpórea (IMC) é: {imc:.2f}")
+
+    except ValueError:
+        print("Por favor, digite um número válido. Utilize ponto para separar as casas decimais.")
+
+
+if __name__ == "__main__":
+    main()

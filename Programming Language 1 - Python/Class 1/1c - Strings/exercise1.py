@@ -7,3 +7,9 @@
     a. "Oi fulano, vamos aprender Python?"
     b. Imprima a mensagem em maiúsculo.
 """
+
+nome = input("Digite seu nome: ")
+mensagem = f"Oi {nome}, vamos aprender Python?"
+
+print(mensagem)
+print(mensagem.upper())

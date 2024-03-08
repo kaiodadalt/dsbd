@@ -3,3 +3,4 @@
     
     Faça os exercícios 1, 2 e 3 com impressão "simples" e usando format.
 """
+# feito direto no arquivo do respectivo exercício

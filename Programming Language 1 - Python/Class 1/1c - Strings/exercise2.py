@@ -8,5 +8,13 @@
 """
 
 # Imprimindo a citação e o autor com deslocamento de três tabs
-print("\t\t\t\"No Brasil, quando o feriado é religioso, até ateu comemora\"")
-print("\t\t\tJô Soares")
+# impressão símples
+# print("\t\t\t\"No Brasil, quando o feriado é religioso, até ateu comemora\"")
+# print("\t\t\tJô Soares")
+
+# impressão com format()
+tabs = "\t\t\t{}"
+citacao = '"No Brasil, quando o feriado é religioso, até ateu comemora"'
+autor = "Jô Soares"
+print(tabs.format(citacao))
+print(tabs.format(autor))

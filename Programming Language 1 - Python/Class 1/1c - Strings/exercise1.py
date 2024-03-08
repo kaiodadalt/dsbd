@@ -9,7 +9,13 @@
 """
 
 nome = input("Digite seu nome: ")
-mensagem = f"Oi {nome}, vamos aprender Python?"
 
-print(mensagem)
-print(mensagem.upper())
+# impressão símples
+# mensagem = f"Oi {nome}, vamos aprender Python?"
+# print(mensagem)
+# print(mensagem.upper())
+
+# impressão com format()
+mensagem = "Oi {}, vamos aprender Python?"
+print(mensagem.format(nome))
+print(mensagem.format(nome).upper())

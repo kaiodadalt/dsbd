@@ -20,4 +20,6 @@ with open('python_exercise.csv') as content:
         fixed_content_lines.append(','.join(fixed_row))
 
 fixed_content = '\n'.join(fixed_content_lines)
-print(header[:-1] + fixed_content)
+fixed_csv = header[:-1] + fixed_content
+
+print(fixed_csv)

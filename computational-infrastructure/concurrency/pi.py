@@ -19,25 +19,26 @@ if __name__ == "__main__":
     step = 1.0/num_steps
     tic = time.time() # Tempo Inicial
     
-    loop_range = num_steps/4
+    cpu = 4
+    loop_range = num_steps/cpu
     processes = []
     
-    for i in range(4):
-        processes.append(Process(target=pi_naive, args=(int(i*loop_range), int((i+1)*loop_range), step)))
+    for i in range(cpu):
+        processes.append(Process(target=pi_naive, args=(int(i*loop_range), int((i+1)*loop_range) -1, step)))
     
-    for i in range(4):
+    for i in range(cpu):
         processes[i].start()
         
-    for i in range(4):
+    for i in range(cpu):
         processes[i].join()
     
     toc = time.time() # Tempo Final
     # pi = step * sums
     
-    pi = (  0.5675882184166029 +
-            0.874675783495744 +
-            0.7194139991698749 +
-            0.9799146525074476)
+    pi = (  0.5675880184165929 +
+            0.9799142760368506  + 
+            0.8746754634957313 +
+            0.7194137431698626 )
     
     print ("Valor Pi: %.10f" %pi)
     print ("Tempo Pi: %.8f s" %(toc-tic))

@@ -3,8 +3,8 @@ from multiprocessing import Process
 
 
 def pi_naive(start, end, step):
-    print ("Start: ", str(start))
-    print ("End: ", str(end))
+    # print ("Start: ", str(start))
+    # print ("End: ", str(end))
     sum = 0.0
     
     for i in range(start, end):
@@ -24,11 +24,11 @@ if __name__ == "__main__":
     processes = []
     
     for i in range(cpu):
-        processes.append(Process(target=pi_naive, args=(int(i*loop_range), int((i+1)*loop_range) -1, step)))
+        processes.append(Process(target=pi_naive, args=(int(i*loop_range), int((i+1)*loop_range) -1, step, )))
     
     for i in range(cpu):
         processes[i].start()
-        
+    
     for i in range(cpu):
         processes[i].join()
     
@@ -37,8 +37,8 @@ if __name__ == "__main__":
     
     pi = (  0.5675880184165929 +
             0.9799142760368506  + 
-            0.8746754634957313 +
-            0.7194137431698626 )
+            0.7194137431698626 +
+            0.8746754634957313 )
     
     print ("Valor Pi: %.10f" %pi)
     print ("Tempo Pi: %.8f s" %(toc-tic))

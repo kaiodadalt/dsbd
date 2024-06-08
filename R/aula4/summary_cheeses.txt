@@ -1,0 +1,15 @@
+    cheese              url                milk             country             region             family              type           fat_content       
+ Length:1187        Length:1187        Length:1187        Length:1187        Length:1187        Length:1187        Length:1187        Length:1187       
+ Class :character   Class :character   Class :character   Class :character   Class :character   Class :character   Class :character   Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character   Mode  :character   Mode  :character   Mode  :character   Mode  :character  
+                                                                                                                                                        
+ calcium_content      texture              rind              color              flavor             aroma           vegetarian        vegan           synonyms        
+ Length:1187        Length:1187        Length:1187        Length:1187        Length:1187        Length:1187        Mode :logical   Mode :logical   Length:1187       
+ Class :character   Class :character   Class :character   Class :character   Class :character   Class :character   FALSE:386       FALSE:742       Class :character  
+ Mode  :character   Mode  :character   Mode  :character   Mode  :character   Mode  :character   Mode  :character   TRUE :362       TRUE :6         Mode  :character  
+                                                                                                                   NA's :439       NA's :439                         
+ alt_spellings       producers        
+ Length:1187        Length:1187       
+ Class :character   Class :character  
+ Mode  :character   Mode  :character  
+                                      
